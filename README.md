@@ -25,14 +25,22 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+Both receive functions as parameters and apply on each element. However, map returns a new array and what forEach returns is undefined.
 
 2. Explain the difference between a callback and a higher order function.
+Higher order functions take another function as an argument and returns a function to its callers, but callback functions are passed to another function and the other function calls it.
 
 3. What is closure?
+The combo of a function with references to the lexical environment. It gives you the ability to access the outer function's scope from the inner function.
 
 4. Describe the four rules of the 'this' keyword.
+-Simple Function Call: this is global object in non-strict, and undefined in strict mode.
+-Implicit Binding: this points to the object on which a function is called to. AKA Whatever is left of the period when you call the function is "Implied".
+-Explicit Binding: We can "explicitly" tell JS to point this to a certain value using call, apply, or bind.
+-new Binding: Using the 'new' keyword makes a new object which this points to.
 
 5. Why do we need super() in an extended class?
+Super is the mechanism by which you access the parent class' constructor.
 
 ### Task 1 - Project Set up
 
